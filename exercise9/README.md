@@ -9,7 +9,7 @@ You can use the following Wokwi project:
 
 To work with any file in python, we need to first create a connection to it and save it as a variable. 
 
-<img src="./imgs/openFilePython.png" alt="Opening file in python">
+<img src="./imgs/openFilePython.png" alt="Opening file in python" width=400>
 
 <br>
 
