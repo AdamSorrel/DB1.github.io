@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="253.96643mm"
+   height="145.51326mm"
+   viewBox="0 0 253.96643 145.51326"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   sodipodi:docname="openFilePython.svg"
+   inkscape:export-filename="openFilePython.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="true"
+     inkscape:zoom="0.70822811"
+     inkscape:cx="724.3429"
+     inkscape:cy="435.59412"
+     inkscape:window-width="1920"
+     inkscape:window-height="991"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     showgrid="true">
+    <sodipodi:guide
+       position="201.87959,104.76085"
+       orientation="0,-1"
+       id="guide6"
+       inkscape:locked="false" />
+    <inkscape:grid
+       id="grid12"
+       units="mm"
+       originx="53.93998"
+       originy="-14.368746"
+       spacingx="0.99999998"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14901961"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect14"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect13"
+       is_visible="true"
+       lpeversion="1.3"
+       threshold="100"
+       steps="1"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect12"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect11"
+       is_visible="true"
+       lpeversion="1.3"
+       threshold="100"
+       steps="1"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <rect
+       x="602.04529"
+       y="327.48068"
+       width="257.59152"
+       height="136.7831"
+       id="rect6" />
+    <inkscape:path-effect
+       effect="spiro"
+       id="path-effect6"
+       is_visible="true"
+       lpeversion="1" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect5"
+       is_visible="true"
+       lpeversion="1.3"
+       threshold="100"
+       steps="1"
+       smooth_angles="360"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false" />
+    <rect
+       x="207.05086"
+       y="338.87387"
+       width="355.42438"
+       height="145.43336"
+       id="rect3" />
+    <rect
+       x="63.538849"
+       y="206.14827"
+       width="642.44836"
+       height="189.20457"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(53.93998,-14.368746)">
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text1"
+       style="font-size:64px;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:-0.5px;white-space:pre;shape-inside:url(#rect1);display:inline;fill:#d4aa00;stroke:#59a2b4;stroke-width:6.66667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0" />
+    <text
+       xml:space="preserve"
+       style="font-size:16.9333px;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:-0.132292px;fill:#d4aa00;stroke:#59a2b4;stroke-width:1.76389;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0"
+       x="-63.597279"
+       y="70.607544"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.76389"
+         x="-63.597279"
+         y="70.607544">f_out = open(&quot;file.txt&quot;, &quot;w&quot;)</tspan></text>
+    <rect
+       style="fill:#59a2b4;fill-opacity:0.415129;stroke:#59a2b4;stroke-width:1.764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2"
+       width="92.275475"
+       height="21.277409"
+       x="55.66415"
+       y="55.12117" />
+    <rect
+       style="fill:#ff8500;fill-opacity:0.415686;stroke:#ff8500;stroke-width:1.764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2-0"
+       width="29.233414"
+       height="22.031054"
+       x="164.9451"
+       y="55.009281" />
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text3"
+       style="font-size:64px;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:-0.5px;white-space:pre;shape-inside:url(#rect3);display:inline;fill:#59a2b4;fill-opacity:0.415129;stroke:#59a2b4;stroke-width:6.66667;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-opacity:0.555351" />
+    <text
+       xml:space="preserve"
+       style="font-size:16.9333px;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:-0.132292px;fill:#59a2b4;fill-opacity:1;stroke:none;stroke-width:1.76389;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-opacity:0.555351"
+       x="58.735229"
+       y="26.150949"
+       id="text4"><tspan
+         sodipodi:role="line"
+         id="tspan4"
+         style="fill:#59a2b4;fill-opacity:1;stroke:none;stroke-width:1.76389"
+         x="58.735229"
+         y="26.150949">Filename as </tspan><tspan
+         sodipodi:role="line"
+         style="fill:#59a2b4;fill-opacity:1;stroke:none;stroke-width:1.76389"
+         x="58.735229"
+         y="47.317574"
+         id="tspan5">a string</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text6"
+       style="font-size:64px;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:-0.5px;white-space:pre;shape-inside:url(#rect6);display:inline;fill:#ff8500;fill-opacity:0.415686;stroke:#ff8500;stroke-width:6.66709;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:0.556863" />
+    <text
+       xml:space="preserve"
+       style="font-size:16.9333px;font-family:Consolas;-inkscape-font-specification:Consolas;letter-spacing:-0.132292px;fill:#ff8500;fill-opacity:0.415686;stroke:#ff8500;stroke-width:1.764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:0.556863"
+       x="191.50641"
+       y="95.890854"
+       id="text7"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         style="text-align:end;text-anchor:end;fill:#ff8500;fill-opacity:1;stroke:none;stroke-width:1.764"
+         x="191.50641"
+         y="95.890854">Access mode</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:end;text-anchor:end;fill:#ff8500;fill-opacity:1;stroke:none;stroke-width:1.764"
+         x="191.50641"
+         y="117.05748"
+         id="tspan8">&quot;r&quot; - read</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:end;text-anchor:end;fill:#ff8500;fill-opacity:1;stroke:none;stroke-width:1.764"
+         x="191.50641"
+         y="138.22411"
+         id="tspan9">&quot;w&quot; - write</tspan><tspan
+         sodipodi:role="line"
+         style="text-align:end;text-anchor:end;fill:#ff8500;fill-opacity:1;stroke:none;stroke-width:1.764"
+         x="191.37411"
+         y="159.39073"
+         id="tspan10">...</tspan></text>
+    <path
+       style="fill:#ff8500;fill-opacity:1;stroke:#59a2b4;stroke-width:1.764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       d="M 56.000001,54.587499 V 17.5875"
+       id="path11"
+       inkscape:path-effect="#path-effect11;#path-effect12"
+       inkscape:original-d="M 56.000001,54.587499 V 17.5875"
+       transform="translate(0,-1.5875)"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:#ff8500;fill-opacity:1;stroke:#ff8500;stroke-width:1.764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0;stroke-dasharray:none;stroke-opacity:1"
+       d="M 194,78.999998 V 159"
+       id="path12"
+       inkscape:path-effect="#path-effect13;#path-effect14"
+       inkscape:original-d="M 194,78.999998 V 159"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:16.9333px;font-family:Consolas;-inkscape-font-specification:Consolas;text-align:end;letter-spacing:-0.132292px;text-anchor:end;fill:#ff8500;stroke:#59a2b4;stroke-width:1.764;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:0"
+       x="75"
+       y="90"
+       id="text5"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="stroke-width:1.764"></tspan></text>
+  </g>
+</svg>
