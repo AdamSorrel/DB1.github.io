@@ -28,7 +28,8 @@ Let's focus on the right pane with your setup first.
 
 <br>
 
-> ⚠️ Resistor is a crucial part of this circuit. An LED alone does not provide enough resistance and without sufficient resitance, too much current will flow through your circuit and it will potentially damage your LED or the control unit!
+> [!CAUTION]
+>  Resistor is a crucial part of this circuit. An LED alone does not provide enough resistance and without sufficient resitance, too much current will flow through your circuit and it will potentially damage your LED or the control unit!
 
 <br>
 
