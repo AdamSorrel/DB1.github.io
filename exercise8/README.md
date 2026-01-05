@@ -1,4 +1,4 @@
-# Exercise 7: Hardware debugging
+# Exercise 8: Hardware debugging
 
 Whenever interacting with a new piece of hardware, we need to test it with simple case scenario. Even straight from a factory, it may happen that some pieces are faulty. Let's go through several simple case scenarios to test our hardware components. 
 

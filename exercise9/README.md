@@ -1,4 +1,4 @@
-# Exercise 8: Writing into a file
+# Exercise 9: Writing into a file
 
 In this exercise, we will learn to write into a file. You will need to this to retrieve the results from your sensor. 
 

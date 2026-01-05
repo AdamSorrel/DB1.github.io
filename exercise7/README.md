@@ -1,4 +1,4 @@
-# Wokwi exercise 6: Pulse width modulation (PWM)
+# Wokwi exercise 7: Pulse width modulation (PWM)
 
 Open the link to the exercise on the Wokwi platform: [https://wokwi.com/projects/450672575785846785](https://wokwi.com/projects/450672575785846785).
 

@@ -1,4 +1,4 @@
-# Wokwi exercise 5: Analog digital converter (ADC)
+# Wokwi exercise 6: Analog digital converter (ADC)
 
 Open the link to the exercise on the Wokwi platform: [https://wokwi.com/projects/450597286732080129](https://wokwi.com/projects/450597286732080129).
 
