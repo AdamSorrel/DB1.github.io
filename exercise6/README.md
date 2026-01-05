@@ -81,7 +81,8 @@ Construct an infinite while loop that reads voltage values from your `adc1` clas
 >  You can use an f-string formatting for prettiness sake. Just a reminder, the constructor is `f"string {code}"` where "string" will get printed literally and all code in curly brackets will get interpreted (e.g. values of variables will get printed). 
 
 ---
-> [!IMPORTANT]  Wokwi final exercise
+> [!IMPORTANT]  
+> ## Wokwi final exercise
 > You can choose to do this part later, after the exercise is finished.
 > 
 > You will need to work with a slightly different sensor in your Wokwi assignment, since the exact same is not available, however their operation is almost identical. 

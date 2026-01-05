@@ -17,5 +17,6 @@ You can with the easier example of a blocking code.
 
 Once you have succeeded with a blocking code, try and adjust it to make it non-blocking using the example above. Ask your group peers or a TA if this is not clear. 
 
-> [!IMPORTANT]  Wokwi final exercise
+> [!IMPORTANT]  
+> ## Wokwi final exercise
 > Implement a debounced button in your final Workwi assignment. You can also adjust your blinking LED to be non-blocking using the same principle. For now, make your button print a message on the screen. We will learn how to exit your program in the next exercise. 

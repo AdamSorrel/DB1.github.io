@@ -112,5 +112,11 @@ Function `time()` takes no arguments and will return the current time at the mom
 > [!WARNING]
 >  **Make sure to add a sleep function in your loop for at least 0.5 sec, otherwise your program will finish in a fraction of a second and you won't see any increments of the time in your output.**   
 
+---
+
+> [!IMPORTANT]  
+> ## Wokwi final exercise
+> Implement saving into a file in your Wokwi final assignment program. You should save values from your sensor together with a time stamp since your button was first pressed and your program was activated. 
+> Check the content of your file after the program has exitted. 
 
 
