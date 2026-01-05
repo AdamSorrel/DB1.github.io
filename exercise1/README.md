@@ -116,7 +116,8 @@ This is how you add connection wires. Just click on a port and drag towards the 
 
 <br>
 
-:warning: LEDs have a polarity just like all other diodes. That means that they will allow current flow (and light up) in one direction only. If you connect your pin in the opposite direction, the LED will not light up even if your code is correct. 
+> [!WARNING]
+> LEDs have a polarity just like all other diodes. That means that they will allow current flow (and light up) in one direction only. If you connect your pin in the opposite direction, the LED will not light up even if your code is correct. 
 
 <br>
 
@@ -184,7 +185,8 @@ If we want to repeat tasks, we can use one of two main tools in python a `for` l
 while <logical statement>:
     <do something>
 ```
-> :bulb: Note the colon at the end of the `while <logical statement>` line. This is an essential part of the Python loop syntax!
+> [!TIP]
+>  Note the colon at the end of the `while <logical statement>` line. This is an essential part of the Python loop syntax!
 
 Where the parts delimited in pointy brackets `<>` are a pseudocode, or in other words describe what needs to happen rather than the actual code. 
 
@@ -202,19 +204,11 @@ This code ill start with zero check that `0 < 3` is correct, and this will there
 
 Sometimes we want to continue indefinitely. If that is the case, we can directly insert the boolean value `True` which will never change and thus our while loop will be **infinite**. 
 
-<br>
-
 #### Loop syntax in python
-
-<br>
 
 Multiple lines of code may be executed in one `while` loop in python. To distinguish which parts of the code belog to the loop and which parts are parts of the script that follows, we use a single `TAB`. This will often be prefilled automatically in your code editor since **this is an essential part of Python loop syntax**. 
 
-<br>
-
 <img src="./ex1Imgs/whileTrueLoop.gif" alt="Description" height="150">
-
-<br>
 
 ```python
 while <logical statement>:
@@ -223,11 +217,7 @@ while <logical statement>:
 <do this only after the loop has finished!>
 ```
 
-<br>
-
 ### Blink LEDs on and off using `while` loop
-
-<br>
 
 Go back to your code and try to implement a `while` loop instead of your several lines of code. You can choose what pattern you want to blink your LEDs in. 
 
@@ -237,5 +227,6 @@ Go back to your code and try to implement a `while` loop instead of your several
 
 ---
 
-> [!IMPORTANT]  Wokwi final exercise 
+> [!IMPORTANT] 
+> Wokwi final exercise 
 > Now that you know how to blink an LED, you can implement this in your final Wokwi assignment program. In the future, you will learn how to implemnt this LED blinking in a "non-blocking" fashion and what this even means and why is it useful, but that will require only a small adjustment. 
