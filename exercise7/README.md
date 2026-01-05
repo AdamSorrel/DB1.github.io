@@ -23,3 +23,11 @@ All you will need for this exercise is an LED and a resistor (don't forget that 
 ## Expected outcome
 
 You should see your LED changing brightness. In Wokwi, this animation has certain limitations, but you will see better when we work with HUZZAH32 device. 
+
+---
+> [!IMPORTANT]  Wokwi final exercise
+> To match the sensor sensitivity, you will need to dim your **orange LED** diode a little and keep it at that value throughout the experiment. You will test this with your HUZZAH32 device in an upcoming assignment, but for now just take it at a face value. 
+> 
+> You can choose whatever value of a duty cycle (dimming) you desire, but don't choose one that is very low so the LED wouldn't look as though it is OFF. Perhaps 512 - right in the middle - would be a good start. 
+>
+> Your LED will remain on until the end when the program is turned on. It will not change during the operation within your infinite loop. However, it should be explicitely turned off when you are exitting your program. 

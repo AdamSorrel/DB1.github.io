@@ -2,7 +2,8 @@
 
 Whenever interacting with a new piece of hardware, we need to test it with simple case scenario. Even straight from a factory, it may happen that some pieces are faulty. Let's go through several simple case scenarios to test our hardware components. 
 
->:warning: This is a group exercise. Wait for all of the members of your group to be ready to follow along. 
+> [!WARNING]
+> This is a group exercise. Wait for all of the members of your group to be ready to follow along. 
 
 ## Checking resistors
 
@@ -28,12 +29,15 @@ Internal LED of the HUZZAH32 is connected to the  pin 13. We will start by check
 Now that we have a script that we are sure works, we can proceed to check the supplied color LEDs. We will take advantage of the fact that the same pin 13 that drives internal LED also drives a physical pin with the same number (13) on the HUZZAH32.
 
 We will proceed to connect a physical LED to the pin 13. 
-> :warning: Remember that you **HAVE TO ADD A RESISTOR IN SERIES WITH YOUR LED** to protect it and the pin of HUZZAH32.
->  
-> :bulb: Keep in mind that an LED has a polarity. That means that it conducts electricity and lights up only in one direction. In the opposite direction it does not allow the passage of current. Connecting LED in the opposite direction will not damage it as long as it is within an appropriately designed circuit (appropriate voltage and current), but will not light up. 
-> <img src="./ex6imgs/led-polarity.png" width=300 alt="LED polarity diagram.">
+
+> [!WARNING]
+> Remember that you **HAVE TO ADD A RESISTOR IN SERIES WITH YOUR LED** to protect it and the pin of HUZZAH32.
+>
+>
+> Keep in mind that an LED has a polarity. That means that it conducts electricity and lights up only in one direction. In the opposite direction it does not allow the passage of current. Connecting LED in the opposite direction will not damage it as long as it is within an appropriately designed circuit (appropriate voltage and current), but will not light up. 
 > 
-> Check the polarity of the LED.
+> <img src="./imgs/led-polarity.png" width=300 alt="LED polarity diagram.">
+
 
 Once connected, the external LED should light up at the same time as the internal red LED. 
 
@@ -49,7 +53,8 @@ Once connected, the external LED should light up at the same time as the interna
 
 If you have checked the above points and your LED still does not light up, it might be faulty. 
 
-> :bulb: If you are unsure about your LED at any point in the future, you can always come back to this test to verify its performance. 
+> [!TIP]
+>  If you are unsure about your LED at any point in the future, you can always come back to this test to verify its performance. 
 
 ## Checking a button 
 

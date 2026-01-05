@@ -67,11 +67,11 @@ In the same command line, we will now open the content of the file to check it. 
 
 Once you have your access handle, there are several ways to aceess the content, but in our case we will use `f_in.readlines()`. This will retrieve all lines of your file and print them into the command line. It will not particularly preserve the actual file structure, but you can easily check the content of your file this way. 
 
-:warning: Make sure that your file contains the values of your counter.
+> [!NOTE] 
+> Make sure that your file contains the values of your counter.
 
-#### :warning: DISCLAIMER :warning::
-
-**Python works with files in a somewhat unintuitive fashion. Once getting to the end of the file, it will no longer return any further conent! This may look very confusing.**
+> [!CAUTION] DISCLAIMER 
+> **Python works with files in a somewhat unintuitive fashion. Once getting to the end of the file, it will no longer return any further conent! This may look very confusing.**
 
 Let's explain on an example. Your file is called `output.txt` and your values in it are `0123456789`. Calling `.readlines()` once will return the following:
 
@@ -92,7 +92,8 @@ This is becuse python has already reached the end of the file, or in other words
 
 To get around this, you need to open the handle once again in the exact same fashion as you did at the beginning (using the `open(...)` statement). This will prompt the handle to read one again from the beginning. 
 
-> :bulb: If you would like to print the content of your file in a more formatted way, you can instead use a `for` loop in the following way:
+> [!TIP] 
+> If yopu would like to print the content of your file in a more formatted way, you can instead use a `for` loop in the following way:
 > ```pyhton
 >for line in f_in:
 >    print(line)
@@ -108,7 +109,8 @@ The function `time()` will return the number of seconds since starting the devic
 
 Function `time()` takes no arguments and will return the current time at the moment you call it. Now that you know how to retrieve the time, add a time stamp to your counter and save both in your file.
 
-:warning: **Make sure to add a sleep function in your loop for at least 0.5 sec, otherwise your program will finish in a fraction of a second and you won't see any increments of the time in your output.**   
+> [!WARNING]
+>  **Make sure to add a sleep function in your loop for at least 0.5 sec, otherwise your program will finish in a fraction of a second and you won't see any increments of the time in your output.**   
 
 
 

@@ -20,7 +20,8 @@ You will see three ports on your potentiometer:
 - SIG in the middle stands for **signal** and it should be connected one of your ADC pins (see bellow).
 - VCC should be connected to your constant 3.3V pin (top left).
 
-> :bulb: Not all pins of your device are able to convert analogue signal to digital. In Wokwi, all pins seem to have this capacity, but in your actual HUZZAH32, it is only pins labelled A1 - A5 (pins 25, 26, 39, 36 and 4) and pins D12, D13, D14, D27, D33, D15, D32 (pin 13, 12, 33, 15, 32 and 14). 
+> [!NOTE]
+>  Not all pins of your device are able to convert analogue signal to digital. In Wokwi, all pins seem to have this capacity, but in your actual HUZZAH32, it is only pins labelled A1 - A5 (pins 25, 26, 39, 36 and 4) and pins D12, D13, D14, D27, D33, D15, D32 (pin 13, 12, 33, 15, 32 and 14). 
  <img src="./imgs/HUZZAH32pinout.png" alt="HUZZAH32 pinout">
 
 <br>
@@ -48,7 +49,8 @@ adc1 = ADC(Pin(<num>))
 ```
 ### Establishing the attenuation coefficient
 
-:warning: By default, the input voltage to the ADC pin can be between 0V and 1V **only**. If we need to measure values above that range, we need to implement attenuation. This we we can scale the voltage to be between 0-1.34V, 0-2V and 0-3.6V.
+> [!CAUTION]
+> By default, the input voltage to the ADC pin can be between 0V and 1V **only**. If we need to measure values above that range, we need to implement attenuation. This we we can scale the voltage to be between 0-1.34V, 0-2V and 0-3.6V.
 The following attenuation values are available:
 
 | Code          | Attenuation value | Voltage Range [V] |  
@@ -75,4 +77,22 @@ To do that, we need to call `adc1` class functions to read its value. We have se
 
 Construct an infinite while loop that reads voltage values from your `adc1` class using its `read_uv()` function every half a second. Calculate the value in V instead of the supplied μV and print the value throuth the serial port using the `print()` function. 
 
->:bulb: You can use an f-string formatting for prettiness sake. Just a reminder, the constructor is `f"string {code}"` where "string" will get printed literally and all code in curly brackets will get interpreted (e.g. values of variables will get printed). 
+> [!TIP]
+>  You can use an f-string formatting for prettiness sake. Just a reminder, the constructor is `f"string {code}"` where "string" will get printed literally and all code in curly brackets will get interpreted (e.g. values of variables will get printed). 
+
+---
+> [!IMPORTANT]  Wokwi final exercise
+> You can choose to do this part later, after the exercise is finished.
+> 
+> You will need to work with a slightly different sensor in your Wokwi assignment, since the exact same is not available, however their operation is almost identical. 
+> You can find the appropriate sensor as a "Photoresistor (LDR) Sensor" as shown bellow.
+> 
+> <img src="./imgs/findingSensor.gif" width=300 alt="Finding a photoresistor in Wokwi.">
+> 
+> To wire your sensor, you need to connect the VCC pin to the device's 3.3 V pin and the GND pin to a GND (ground) pin of your device. You should ignore the DO pin and connect the AO pin to the  ADC pin of your choice.
+> 
+> <img src="./imgs/wokwiSensorConnection.png" width=300 alt="Connecting photoresistor to a device."> 
+> 
+> Ensure that your device is receiving values from the sensor by printing them in a loop first. You can manually change the signal from the sensor by clicking on it in a simulation mode.
+>  
+> <img src="./imgs/changingSensorValue.gif" width=500 alt="Changing photoresistor value.">

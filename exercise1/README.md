@@ -57,7 +57,8 @@ Pins can be functioning as output, where a voltage is change according to instru
 
 ---
 
-:bulb: `Pin.OUT` is actually just a variable holding an integer (numerical value). You can check what this value is by printing it using the following code 
+> [!NOTE]
+> `Pin.OUT` is actually just a variable holding an integer (numerical value). You can check what this value is by printing it using the following code 
 ```
 print("Pin.OUT value:")
 print(Pin.OUT)
@@ -78,7 +79,8 @@ $$
 current = \frac{voltage}{resistance}
 $$
 
-:warning: If you think about it, when resistance is close to zero, current will tend to infinity! And that is way too much current. 
+> [!WARNING]warning: 
+> If you think about it, when resistance is close to zero, current will tend to infinity! And that is way too much current. 
 
 In fact our LED's resistance is very low and that is why we always need to add extra resistor of at least 1 K$\Omega$ to our circuit. 
 
@@ -137,7 +139,8 @@ If you want to see your LED light up, you need to turn it on in the latter part 
 
 <br>
 
-> :bulb: HINT: Is your LED not lighting up? Check the polarity. If you still cannot make it work, check with one of your colleagues or with a TA.
+> [!TIP] HINT:
+>  Is your LED not lighting up? Check the polarity. If you still cannot make it work, check with one of your colleagues or with a TA.
 
 <br>
 
@@ -193,7 +196,8 @@ while n < 3:
 ```
 This code ill start with zero check that `0 < 3` is correct, and this will therefore produce a boolean value `True` and the while loop will engage for the first time. It will proceed to print 0, increment `n` by 1, and proceed to the next loop check that `1 < 3` is `True` and proceed to the next loop, print 1, etc. When it reaches 3, it will print 3, add 1 and check `4 < 3` which is not true, therefore a boolean value of `False` will be produced and the wile loop will disengage and continue to whatever code might follow in your script.
 
-> :bulb: If this explanation does not make sense to you, try to ask your colleague to explain it to you. You will both learn in this process. Of course you are also always welcome to ask the teching team.
+> [!TIP]
+>  If this explanation does not make sense to you, try to ask your colleague to explain it to you. You will both learn in this process. Of course you are also always welcome to ask the teching team.
 
 Sometimes we want to continue indefinitely. If that is the case, we can directly insert the boolean value `True` which will never change and thus our while loop will be **infinite**. 
 
@@ -226,4 +230,11 @@ while <logical statement>:
 
 Go back to your code and try to implement a `while` loop instead of your several lines of code. You can choose what pattern you want to blink your LEDs in. 
 
-> :bulb: Don't forget that you still need a `sleep()` function to slow down execution of your loop. Otherwise your LEDs will blink so fast human eyes would not be able to see that. Or perhaps so fast even the LEDs would not actually be able to turn fully on and off that rapidly and it will remain sort of "half turned on" the whole time. In fact we will use this property later in the course.
+> [!TIP] 
+> Don't forget that you still need a `sleep()` function to slow down execution of your loop. Otherwise your LEDs will blink so fast human eyes would not be able to see that. Or perhaps so fast even the LEDs would not actually be able to turn fully on and off that rapidly and it will remain sort of "half turned on" the whole time. In fact we will use this property later in the course.
+
+
+---
+
+> [!IMPORTANT]  Wokwi final exercise 
+> Now that you know how to blink an LED, you can implement this in your final Wokwi assignment program. In the future, you will learn how to implemnt this LED blinking in a "non-blocking" fashion and what this even means and why is it useful, but that will require only a small adjustment. 
