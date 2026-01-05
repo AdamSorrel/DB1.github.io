@@ -25,6 +25,7 @@
 
 #### Try avoiding installation in One Drive
 - See the previous issue. 
+- Documents and Desktop are typically part of One Drive.
 
 #### Not an admin message + Press any key
 - Open terminal as administrator (right click on the icon).
