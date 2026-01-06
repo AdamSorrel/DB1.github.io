@@ -112,6 +112,13 @@ Function `time()` takes no arguments and will return the current time at the mom
 > [!WARNING]
 >  **Make sure to add a sleep function in your loop for at least 0.5 sec, otherwise your program will finish in a fraction of a second and you won't see any increments of the time in your output.**   
 
+> [!TIP]
+> The following content is optional, but you may find it useful for your design. If you don't change the name of your file every time you create it, python will happily rewrite it next time you open the same program. This might be unwanted and to avoid it, python provides a specific option for opening a file called **exclusive write**. This returns an error when filename already exists thus protecting it from being rewritten.
+> You can implement exclusive write by adding `"x"` to the mode option when opening a file:
+> ```python
+> f_out = open("file.txt", "wx")
+> ```
+
 ---
 
 > [!IMPORTANT]  

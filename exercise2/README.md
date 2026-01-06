@@ -104,5 +104,5 @@ To follow what is going on, add also a `print()` statement. You should include t
 ---
 
 > [!IMPORTANT]  
-> ## Wokwi final exercise 
+> ## Wokwi final assignment 
 > In the next exercise, we will improve the operation of this button and that is the code you should also use in your Wokwi assignment. Wait until then.
