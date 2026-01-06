@@ -23,7 +23,7 @@ while True:
 Once you have tried the non-blocking code and got it to work, let's up the difficulty a bit. Bellow is a pseudo code for a non-blocking code. It is not that much more complex and it will be very useful for your program. 
 
 ```python
-from utime import ticks_ms(), ticks_diff()
+from utime import ticks_ms, ticks_diff
 
 # First tiem save time since the last button press using utime's ticks_ms()
 while True:
