@@ -48,8 +48,11 @@ In your previous example, your program has probably exitted right after you have
 
 We will play around with this concept now. Take the program you have written above and add another infinite `while` loop after the first one you have just written. You can also add additional LED and start blinking that one, or perhaps change the frequency of blinking on the original one. Either way, make sure that both of your loops produce a notable effect. Upon pressing the button, the first loop should exit and the second loop will then activate afterwards. 
 
-> [!TIP]
+> [!NOTE]
 > You can think about your first loop as a waiting loop. When you are setting  your device, perhaps you want to make sure everythign is in place first. You might even want to check that your detection orange LED is working properly, but you probably do not want to acquire any data yet while settings things up. This is where a "waiting loop" comes in handy. 
+
+> [!TIP]
+> Done before the allocated exercise time? You should now be able to connect to your HUZZAH32. Why not trying to test some of your code in your actual device if you have the time? Start with a simple LED blinking perhaps. You can even use the internal LED, which on HUZZAH32 is connected to the pin 13. That way you don't have to do any wiring for now. See if you can do that and ask TAs for help if you run into troubles. 
 
 ---
 > [!IMPORTANT]  
