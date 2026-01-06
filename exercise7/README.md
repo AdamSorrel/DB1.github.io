@@ -31,4 +31,4 @@ You should see your LED changing brightness. In Wokwi, this animation has certai
 > 
 > You can choose whatever value of a duty cycle (dimming) you desire, but don't choose one that is very low so the LED wouldn't look as though it is OFF. Perhaps 512 - right in the middle - would be a good start. 
 >
-> Your LED will remain on until the end when the program is turned on. It will not change during the operation within your infinite loop. However, it should be explicitely turned off when you are exitting your program. 
+> Your LED should remain on until the end of your measurement loop, when the program is turned on. It will not change during the operation within your infinite loop. 

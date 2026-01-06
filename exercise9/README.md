@@ -123,7 +123,7 @@ Function `time()` takes no arguments and will return the current time at the mom
 
 > [!IMPORTANT]  
 > ## Wokwi final exercise
-> Implement saving into a file in your Wokwi final assignment program. You should save values from your sensor together with a time stamp since your button was first pressed and your program was activated. 
+> Implement saving into a file in your Wokwi final assignment program. You should save values from your sensor together with a time stamp since your button was first pressed and the second loop in your program was activated and **not since the boot of the device!** 
 > Check the content of your file after the program has exitted. 
 
 
