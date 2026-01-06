@@ -76,7 +76,7 @@ button = Pin(<num>, Pin.IN, Pin.PULL_DOWN)
 ``` 
 
 > [!NOTE]
->  Notice also a new setting we provide, a `Pin.PULL_DOWN`. This is adding an internal pull down resistor. This adds a resistor with very high resistance (typically 10kΩ or more). This resistor provides a weak pull towards ground, which can however overriden easily by external output. This avoids so called "floating voltage", which is your device picking up electromagnetic waves from the environment, much in the same fashion as a radio would. A pin can also be pulled up if the resistor is connected to a e.g. 3.3 V.  
+>  Notice also a new setting we provide, a `Pin.PULL_DOWN`. This is adding an internal pull down resistor. This adds a resistor with very high resistance (typically 10kΩ or more). This resistor provides a weak pull towards ground, which can however overriden easily by an external output. This avoids so called "floating voltage", which is your device picking up electromagnetic waves from the environment, much in the same fashion as a radio would. A pin can also be pulled up if the resistor is connected to a e.g. 3.3 V.  
 
 To help you choose a pin as an input, here is the pinout for HUZZAH32. It may look complicated, but for now you we are only interested in the small yellow labels second closest to the device. These are non-dedicated pins which are available for us to use.  
 
