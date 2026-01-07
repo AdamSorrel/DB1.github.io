@@ -24,11 +24,14 @@ Once you have tried the non-blocking code and got it to work, let's up the diffi
 
 ```python
 from utime import ticks_ms, ticks_diff
+# ticks_ms() -> milisecond counter
+# ticks_diff(t1, t2) -> returns t1 - t2
+
 
 # First tiem save time since the last button press using utime's ticks_ms()
 while True:
-    #Check how much time elapsed since your last button pressed using utime's ticks_diff() function, which has two arguments, t2 and t1
-        # If enough time elapsed, check if button is pressed
+    # Check how much time elapsed since your last button pressed using utime's ticks_diff() function, which has two arguments, t2 and t1
+        # If enough time elapsed (e.g. 200 ms), check if button is pressed
             # If button is pressed, execute whatever code you'd like
             # Inform user that the button was pressed using the print() function
             # Don't forget to update the time since the last button press here too
