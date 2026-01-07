@@ -230,3 +230,5 @@ Go back to your code and try to implement a `while` loop instead of your several
 > [!IMPORTANT] 
 > ## Wokwi final assignment 
 > Now that you know how to blink an LED, you can implement this in your final Wokwi assignment program. In the future, you will learn how to implemnt this LED blinking in a "non-blocking" fashion and what this even means and why is it useful, but that will require only a small adjustment. 
+>
+> Link to wokwi assignment workspace: [https://wokwi.com/projects/452322021836267521](https://wokwi.com/projects/452322021836267521)
