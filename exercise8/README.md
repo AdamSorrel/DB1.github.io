@@ -1,103 +1,129 @@
-# Exercise 8: Hardware debugging
+# Exercise 8: Writing into a file
 
-Whenever interacting with a new piece of hardware, we need to test it with simple case scenario. Even straight from a factory, it may happen that some pieces are faulty. Let's go through several simple case scenarios to test our hardware components. 
+In this exercise, we will learn to write into a file. You will need to this to retrieve the results from your sensor. 
+
+You can use the following Wokwi project:
+[https://wokwi.com/projects/452227563937803265](https://wokwi.com/projects/452227563937803265)
+
+## Opening a file 
+
+To work with any file in python, we need to first create a connection to it and save it as a variable. 
+
+<img src="./imgs/openFilePython.png" alt="Opening file in python" width=400>
+
+<br>
+
+In the above example, we have created a variable `f_out`. This is called a **handle**. This handle is our access to the file and we can use it to write into it. This is because we have selected a flag `"w"` as a mode. There are also other modes and later we will use `"r"` for reading the file.  
+
+To write into your file, you can simply use a method `.write()` as follows:
+
+```python
+f_out.write("Message to be saved in the file")
+```
+
+We can write only strings into our file and so all the data must be formatted as a string. You can use an f-string formatting which you have seen previously (e.g. `f"{variable1} string messsage {variable2}"`). 
+
+There is a few important things to keep in mind when working with files in python. After your program is done working with the file, you need to close the access to it through the same handle calling:
+
+```python
+f_out.close()
+``` 
+
+## Testing writing into a file
+
+Now, to test writing into a file, we will do the following:
+
+- Open a file in the way described above (with `open(...)`)
+- Afterwards, create a simple while or for loop that counts up (e.g. from 0 to 10).  
+  - :bulb: Make sure your loop is not infinite. You can test that by simply printing out the variable you would save into the file in every iteration of your loop. 
+- Once you know your loop is working correctly, write the values of the counter in each loop into a file as described above. If you want them to be saved on a new line every time, add the end of line character `"\n"` after each one.
+- Once your loop is finished, don't forget to close the access to the file, which might otherwise get corrupted. 
+- At the end of your program, print out an exit statement that will let you know that the program is finished. 
+
+### Checking the results
+
+It is unfortunately not completely straightforward to check the results of writing into a file in Wokwi, but it is also not too complex. 
+
+#### Expected results
+
+Your program has run, printed your exit statement that you put at the end of your script and exited successfully. You should now see the python command line: 
+
+```
+MicroPython v1.22.0 on 2023-12-27; Generic ESP32 module with ESP32 Type "help()" for more information.
+>>>
+```
+
+You can write python command in the line starting with `>>>`. We will first check if your file got created by calling `os.listdir()`. This function lists files at your current location which in our case is the root directory of your device. If everything went well, it should show something like this:
+
+```
+>>> os.listdir()
+['diagram.json', 'main.py', 'output.txt']
+```
+where `"output.txt"` is how I have called my output file in this case. You can choose whatever name you like. 
+
+#### Opening a file to read it
+
+In the same command line, we will now open the content of the file to check it. You will need to open a handle to access the file, but this time you will use `"r"` (for read) instead of `"w"` for write. 
+
+Once you have your access handle, there are several ways to aceess the content, but in our case we will use `f_in.readlines()`. This will retrieve all lines of your file and print them into the command line. It will not particularly preserve the actual file structure, but you can easily check the content of your file this way. 
+
+> [!NOTE] 
+> Make sure that your file contains the values of your counter.
+
+> [!CAUTION] DISCLAIMER 
+> **Python works with files in a somewhat unintuitive fashion. Once getting to the end of the file, it will no longer return any further conent! This may look very confusing.**
+
+Let's explain on an example. Your file is called `output.txt` and your values in it are `0123456789`. Calling `.readlines()` once will return the following:
+
+```python
+>>> f_out.readlines()
+>>> [0123456789]
+```
+
+Calling the exact same function **once again** on the exact same file, which has not changed will however return the following:
+
+
+```python
+>>> f_out.readlines()
+>>> []
+```
+
+This is becuse python has already reached the end of the file, or in other words read everything there is to read in the given handle and it correctly, albeit confusingly, tells you that there is no more to read.
+
+To get around this, you need to open the handle once again in the exact same fashion as you did at the beginning (using the `open(...)` statement). This will prompt the handle to read one again from the beginning. 
+
+> [!TIP] 
+> If yopu would like to print the content of your file in a more formatted way, you can instead use a `for` loop in the following way:
+> ```pyhton
+>for line in f_in:
+>    print(line)
+>```
+> This will maintain the internal structure and correctly interpret escape characters (e.g. `"\n"`). However, this is a bit awkward to write in a command line. 
+
+### Including a time stamp in your data
+
+In the following exercise, we will add a time stamp to each value of your counter. To do that we will need to retrieve a value from the internal clock of our microcontroller board. There are several ways to do that in microphython with varying degrees of resolution. For the purposes of your measuring device, the most convenient will probably be 1 second time resolution. This can be retrieved by a function `time()` which you can import from the module `utime` where you are already importing your function `sleep()`. 
+
+The function `time()` will return the number of seconds since starting the device. 
+:bulb: Note that the timer will start at the moment your device reboots, but your program might not be ready to be run yet. This means that the timer values retrieved in reality might not start with 0 or even 1 as we would expect, but  rather often start with 2 or 3 (seconds since the start). This is normal and inevitable and it is due to the time counting being managed by the board's dedicated hardware module and not your program. 
+
+Function `time()` takes no arguments and will return the current time at the moment you call it. Now that you know how to retrieve the time, add a time stamp to your counter and save both in your file.
 
 > [!WARNING]
-> This is a group exercise. Wait for all of the members of your group to be ready to follow along. 
-
-## Checking resistors
-
-Typically resistors are quite reliable and terefore we will not be actively checking them in this course. If you have any doubts, you can always use the multimeter available in the class to check the resistance value of your resistor. 
-
-## Checking LED
-
-It may happen that your LED is faulty or broken. Before starting, you should check its performance. 
-
-### Checking internal LED
-
-Internal LED of the HUZZAH32 is connected to the  pin 13. We will start by checking its performance first. The following step does not require any wiring, only USB connection to your computer.
-
-1. Set up pin 13 as an output pin in the same way you have done in Wokwi (no wiring requred).
-2. Write a short script with an infinite while loop that drives pin 13 as high and low. Don't forget to put a sleep function to wait for a while between each change. 
-
-**Expected outcome**: A small red LED on the HUZZAH32 is blinking.
-
-----
-
-### Checking supplied LEDs
-
-Now that we have a script that we are sure works, we can proceed to check the supplied color LEDs. We will take advantage of the fact that the same pin 13 that drives internal LED also drives a physical pin with the same number (13) on the HUZZAH32.
-
-We will proceed to connect a physical LED to the pin 13. 
-
-> [!WARNING]
-> Remember that you **HAVE TO ADD A RESISTOR IN SERIES WITH YOUR LED** to protect it and the pin of HUZZAH32.
->
->
-> Keep in mind that an LED has a polarity. That means that it conducts electricity and lights up only in one direction. In the opposite direction it does not allow the passage of current. Connecting LED in the opposite direction will not damage it as long as it is within an appropriately designed circuit (appropriate voltage and current), but will not light up. 
-> 
-> <img src="./imgs/led-polarity.png" width=300 alt="LED polarity diagram.">
-
-
-Once connected, the external LED should light up at the same time as the internal red LED. 
-
-#### Troubleshooting:
-
-| Problem                     | Solution                                        |
-| --------------------------- | ----------------------------------------------- |
-| Neither LED lights up       | Check the LED polarity.                         |
-|                             | Unplug extrnal LED and only the internal again. |
-| Only internal LED lights up | Check the exernal LED polarity.                 |
-|                             | Ensure that you are connected to pin 13.        |
-|                             | Make sure you have a correct resistor in series with your LED. |
-
-If you have checked the above points and your LED still does not light up, it might be faulty. 
+>  **Make sure to add a sleep function in your loop for at least 0.5 sec, otherwise your program will finish in a fraction of a second and you won't see any increments of the time in your output.**   
 
 > [!TIP]
->  If you are unsure about your LED at any point in the future, you can always come back to this test to verify its performance. 
+> The following content is optional, but you may find it useful for your design. If you don't change the name of your file every time you create it, python will happily rewrite it next time you open the same program. This might be unwanted and to avoid it, python provides a specific option for opening a file called **exclusive write**. This returns an error when filename already exists thus protecting it from being rewritten.
+> You can implement exclusive write by adding `"x"` to the mode option when opening a file:
+> ```python
+> f_out = open("file.txt", "wx")
+> ```
 
-## Checking a button 
+---
 
-Connect your button following one of our previous Wokwi exercises. Connect it to stable GND (ground) and 3.3 V pins of the HUZZAH32. Connect an LED (remember a resistor in series!) and check that it lights up when button is pressed. 
+> [!IMPORTANT]  
+> ## Wokwi final exercise
+> Implement saving into a file in your Wokwi final assignment program. You should save values from your sensor together with a time stamp since your button was first pressed and the second loop in your program was activated and **not since the boot of the device!** 
+> Check the content of your file after the program has exitted. 
 
-#### Troubleshooting
 
-| Problem                     | Solution                                        |
-| --------------------------- | ----------------------------------------------- |
-| LED is always on            | Make sure to connect your LED **across** from your 3.3 V pin. Review the button wiring in exercise 2. | 
-| LED does not light up when button is pressed | Ensure correct polarity of the LED. |
-|                             | Check LED series resistor value. |
-
-## Checking sensor operation
-
-In the following section, we will work with the light sensor. You can find its technical datasheet on DTU Learn. Bellow is a pinout of the sensor. The pins are shown with the detector facing towards you:
-
-<img src="./imgs/sensorPinout.png" width=150 alt="Light detector pinout.">
-
-<br>
-
-| Terminal | Function                     |
-| -------- | ---------------------------- |
-| GND      | Ground                       |
-| $V_{DD}$ | Supply voltage (3.3 V)       |
-| OUT      | Output (measurement) voltage |
-
-<br>
-
-Connect the pin 1 to HUZZAH32's ground and pin 2 to a 3.3 V pin. Bellow is the wiring diagram:
-
-<img src="./imgs/sensorCircuit.png" width=300 alt="Light detector connection circuit.">
-
-<br>
-
-You can see a resistor $R_{L}$ branching off the output lead. This is a so called "pull down" resistor. This is a high resistance resistor that is used to prevent stray current induced in the wire. The technical sheet quotes pull down resistor value of 10 kΩ (page 6 Note 1) and that is what we will use as well.
-
-Once pull down resistor is installed, you can proceed to connecting the output pin to an ADC enabled pin on HUZZAH32 (pin A1 to A5 - see bellow). 
-
-<img src="./imgs/HUZZAH32pinout.png" width = 600 alt="HUZZAH32 pinout.">
-
-Once all is connected, you can proceed to programming. You can use some of the code from the ADC exercise. Construct a simple infinite `while` loop that reads value from your selected pin and print this value to a serial monitor using the print function every 0.5 s or so. Don't forget to assign an appropriate `.atten` value of 11 DB to your ADC pin.
-
-#### Expected outcome
-
-A voltage is read continuously and displayed through the serial monitor connection on a connected computer. The sensor should be saturated at an ambient light value, but pinching it lighlty between two fingers should reduce the read voltage value significantly. 

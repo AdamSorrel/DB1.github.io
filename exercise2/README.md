@@ -49,7 +49,7 @@ You see a breadboard with an ESP32 device. GND and 3.3V are connected to the pow
 
  ## Add a second blue LED and a 1 kΩ resistor
 
- Add another, this time blue, LED to a terminal that is always powered up (connected to 3.3 V). That is a terminal on the opposite side of the one you have connected your 3.3 V. 
+ Add another, this time blue, LED to a terminal that is always powered up (connected to 3.3 V) on the oposite side of the button. That is a terminal on the opposite side of the one you have connected your 3.3 V. 
 
 <br>
 
